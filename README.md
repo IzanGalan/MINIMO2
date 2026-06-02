@@ -22,3 +22,8 @@ Las capturas de las cosas están en la carpeta evidencias:
 -otra captura de la app con el boton de evento
 -otra captura con la lista de participantes de ese evento
 -y la otra caputra es la terminal respondiendo a la api llamada desde el android y dando la respusta que es la lista de jugadores
+
+
+
+He añadido un poco más la lista es corta no pasa nada, pero en caso de que la lista sea grande encima del layout de la Actividad sale la cantidad de jugadores : numero de jugadores .
+Así es mas sencillo la cuenta de la lista en caso de que la cantidad de jugadores sea elevada
