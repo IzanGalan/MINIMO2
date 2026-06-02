@@ -23,6 +23,7 @@ public class UsuariosEventoActivity extends AppCompatActivity {
     private RecyclerView recyclerUsuarios;
     private ProgressBar progressBar;
     private TextView tvTituloEvento;
+    private TextView tvContador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class UsuariosEventoActivity extends AppCompatActivity {
         recyclerUsuarios = findViewById(R.id.recyclerUsuarios);
         progressBar      = findViewById(R.id.progressBar);
         tvTituloEvento   = findViewById(R.id.tvTituloEvento);
+        tvContador = findViewById(R.id.tvContador);
 
         recyclerUsuarios.setLayoutManager(new LinearLayoutManager(this));
 
@@ -53,6 +55,7 @@ public class UsuariosEventoActivity extends AppCompatActivity {
                             RespuestaEvento datos = response.body();
                             tvTituloEvento.setText("Usuarios del evento: " + datos.getEvento());
                             recyclerUsuarios.setAdapter(new UsuarioEventoAdapter(datos.getUsers()));
+                            tvContador.setText(datos.getUsers().size() + " usuarios registrados");
                         } else {
                             Toast.makeText(UsuariosEventoActivity.this,
                                     "Error del servidor: " + response.code(), Toast.LENGTH_SHORT).show();

@@ -19,6 +19,15 @@
             android:gravity="center"
             android:paddingBottom="16dp" />
 
+        <TextView
+            android:id="@+id/tvContador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingBottom="12dp" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerUsuarios"
             android:layout_width="match_parent"
