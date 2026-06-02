@@ -1,0 +1,14 @@
+﻿# Android
+android/build/
+android/app/build/
+android/.gradle/
+android/.idea/
+android/local.properties
+*.iml
+
+# Web (Maven)
+web/target/
+web/.idea/
+
+# General
+.DS_Store
